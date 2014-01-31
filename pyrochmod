@@ -1,0 +1,20 @@
+#!/bin/bash
+# this script let you automatically change permissions for PyroCMS installation
+ 
+echo "Start Setting PyroCMS folders permissions"
+
+
+chmod -Rf 777 assets/
+echo "changing permissions for assets/cache"
+
+chmod -Rf 777 system/cms/cache
+echo "changing permissions for system/cms/cache/"
+
+chmod -Rf 777 system/cms/logs
+echo "changing permissions for system/cms/logs/"
+
+chmod -Rf 777 uploads
+echo "changing permissions for uploads/"
+ 
+echo "PyroCMS Permissions successfully set"
+
