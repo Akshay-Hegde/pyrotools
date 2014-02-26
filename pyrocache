@@ -1,0 +1,15 @@
+#!/bin/bash
+# this script empty all cache sessions
+ 
+echo "Start emptying assets folder"
+
+rm -Rf assets/cache/*.css
+rm -Rf assets/cache/*.js
+
+echo "End emptying assets folder"
+
+echo "Start emptying cache folder"
+
+rm -Rf *.cache
+ 
+echo "empty cache end"
